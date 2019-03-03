@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtTxtEmail"
+        android:layout_width="306dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="300dp"
+        android:contentDescription="Name"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textPersonName|text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTxtEmail2"
+        android:layout_width="306dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="372dp"
+        android:contentDescription="Name"
+        android:ems="10"
+        android:hint="Confirmar E-mail"
+        android:inputType="text"
+        android:singleLine="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtTxtNome"
+        android:layout_width="301dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="228dp"
+        android:contentDescription="Name"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSend"
+        android:layout_width="300dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="196dp"
+        android:text="Enviar"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtNome" />
+
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="308dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="264dp"
+        android:text="Limpar"
+        app:layout_constraintStart_toStartOf="@+id/edtTxtNome"
+        app:layout_constraintTop_toBottomOf="@+id/edtTxtNome" />
+
+</android.support.constraint.ConstraintLayout>
